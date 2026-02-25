@@ -803,7 +803,7 @@ textarea {
 }
 
 .section-inner-narrow {
-  max-width: 520px;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -854,7 +854,12 @@ textarea {
 }
 
 .menu-block {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
 }
 
 .menu-block:last-of-type {
@@ -900,6 +905,7 @@ textarea {
   margin: 0;
   line-height: 1.6;
   letter-spacing: 0.02em;
+  text-align: right;
 }
 
 .menu-section-image {
@@ -1348,6 +1354,11 @@ textarea {
     font-size: 1rem;
   }
 
+  .menu-block {
+    padding: 1.25rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .menu-info,
   .menu-note,
   .menu-price-inline {
@@ -1529,15 +1540,26 @@ textarea {
     margin-top: 0.5rem;
   }
 
+  .menu-block {
+    padding: 1.1rem 1.1rem;
+    margin-bottom: 1.1rem;
+    border-radius: 10px;
+  }
+
+  .menu-info-oneline {
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+
   .menu-row {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.4rem 0.4rem;
-    margin-bottom: 0.2rem;
-    line-height: 1.3;
-    font-size: 0.75rem;
+    gap: 0.4rem;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.35;
+    font-size: 0.95rem;
   }
 
   .menu-row .menu-name {
@@ -1546,7 +1568,7 @@ textarea {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     word-wrap: normal;
     overflow-wrap: normal;
     word-break: normal;
@@ -1554,7 +1576,7 @@ textarea {
 
   .menu-row .menu-price {
     flex-shrink: 0;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     min-width: 0;
     text-align: right;
     white-space: nowrap;
@@ -1629,14 +1651,18 @@ textarea {
     font-size: 0.95rem;
   }
 
+  .menu-info-oneline {
+    font-size: 0.85rem;
+  }
+
   .menu-row {
-    font-size: 0.7rem;
-    padding: 0.35rem 0.35rem;
-    gap: 0.3rem;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.4rem;
+    gap: 0.35rem;
   }
 
   .menu-row .menu-name {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1646,7 +1672,7 @@ textarea {
   }
 
   .menu-row .menu-price {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .menu-row-with-note .menu-note-inline {
