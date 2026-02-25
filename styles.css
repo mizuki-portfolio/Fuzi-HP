@@ -6,17 +6,22 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  padding-top: 162px;
+  padding-top: calc(162px + env(safe-area-inset-top, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN",
     "Meiryo", sans-serif;
   font-size: 18px;
   line-height: 1.9;
   color: #fff;
   background: #000;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* ローディング画面 */
@@ -29,6 +34,8 @@ body {
   justify-content: center;
   background: #0a0a0a;
   transition: opacity 0.5s ease, visibility 0.5s ease;
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+  box-sizing: border-box;
 }
 
 .loading-screen.hidden {
@@ -124,6 +131,11 @@ body {
   right: 0;
   z-index: 1000;
   width: 100%;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  box-sizing: border-box;
+  background: #1a1a1a;
 }
 
 .top-bar {
@@ -1092,18 +1104,20 @@ textarea {
   }
 
   body {
-    padding-top: 132px;
+    padding-top: calc(132px + env(safe-area-inset-top, 0px));
     font-size: 16px;
     line-height: 1.75;
   }
 
   .header-inner {
-    padding: 1rem 1rem;
+    padding: 0.85rem 0.75rem;
     max-width: 100%;
+    box-sizing: border-box;
   }
 
   .logo {
-    height: 56px;
+    height: 52px;
+    max-height: 10vw;
   }
 
   .main-nav a {
@@ -1153,8 +1167,8 @@ textarea {
 
   .hero {
     height: 55vh;
-    min-height: 280px;
-    padding-top: 64px;
+    min-height: 260px;
+    padding-top: 0.5rem;
   }
 
   .section {
@@ -1391,18 +1405,38 @@ textarea {
   }
 }
 
-/* レスポンシブ：小型スマホ */
+/* レスポンシブ：小型スマホ（iPhone 13 Pro など 390px 幅含む） */
 @media (max-width: 480px) {
   body {
     line-height: 1.72;
+    padding-top: calc(128px + env(safe-area-inset-top, 0px));
+  }
+
+  .header-fixed {
+    padding-left: max(0.5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(0.5rem, env(safe-area-inset-right, 0px));
   }
 
   .header-inner {
-    padding: 0.75rem 0.75rem;
+    padding: 0.7rem 0.5rem;
+    min-width: 0;
   }
 
   .logo {
-    height: 48px;
+    height: 46px;
+    max-height: 12vw;
+  }
+
+  .top-bar {
+    height: 32px;
+    min-height: 32px;
+    padding: 0 0.5rem;
+  }
+
+  .top-bar-inner {
+    gap: 0.2rem 0.35rem;
+    font-size: 0.65rem;
+    line-height: 1.3;
   }
 
   .hero-copy {
