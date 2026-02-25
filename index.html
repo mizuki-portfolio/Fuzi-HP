@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>気仙沼牛たん 藤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ローディング画面 -->
+  <div class="loading-screen" id="loading-screen" aria-hidden="false">
+    <div class="loading-screen-inner">
+      <div class="loading-logo-wrap">
+        <img src="店ロゴ.png" alt="" class="loading-logo">
+      </div>
+      <div class="loading-spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- トップバー＋ヘッダーをひとまとめで上に固定 -->
+  <div class="header-fixed">
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <span class="top-bar-item">夜 17:30 - 22:00</span>
+        <span class="top-bar-sep" aria-hidden="true">／</span>
+        <span class="top-bar-item">定休日 日曜日</span>
+        <span class="top-bar-sep" aria-hidden="true">／</span>
+        <a href="tel:0226485995" class="top-bar-tel">0226-48-5995</a>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo-area">
+          <img src="牛タン藤.png" alt="気仙沼牛たん 藤 ヘッダー" class="logo">
+        </div>
+        <nav class="main-nav" aria-label="メインメニュー">
+          <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="header-sns" aria-label="SNS">
+          <a href="https://www.instagram.com/gyutan.fuji/" class="header-sns-link" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/p/%E6%B0%97%E4%BB%99%E6%B2%BC-%E7%89%9B%E3%81%9F%E3%82%93-%E8%97%A4-61567984661448/"
+            class="header-sns-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+        </div>
+        <button class="nav-toggle" aria-label="メニューを開く">
+          ☰
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <!-- ヘッダー直下：焼き.png -->
+    <section id="home" class="hero"></section>
+
+    <!-- キャッチコピー -->
+    <section class="section hero-copy">
+      <div class="section-inner">
+        <p class="hero-copy-title">気仙沼で味わう魂を込めた職人の技と極上牛たん</p>
+      </div>
+    </section>
+
+    <!-- 一枚入魂 牛たん 藤のこだわり（参考サイトの構成） -->
+    <section class="section section-light">
+      <div class="section-inner">
+        <h2 class="section-title">
+          一枚入魂 全て手仕込みの牛たん<br>
+          藤のこだわり
+        </h2>
+        <div class="section-flex">
+          <div class="section-image">
+            <img src="こだわり.png" alt="牛たん 藤のこだわりのイメージ">
+          </div>
+          <div class="section-text">
+            <p>
+              素材の吟味、手切り、手振り塩による味付け、熟成、炭焼きまで。<br>
+              「仙台伝統の牛たん」を継承。その上で更なる味の追求に励んで、一枚一枚に入魂しております。本当の美味しい牛たん、極上牛たん料理を目指してまいります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">一枚入魂 牛たん 藤のこだわり その1 <span>素材</span></h2>
+        <div class="section-flex">
+          <div class="section-image">
+            <img src="素材.png" alt="牛たんの素材">
+          </div>
+          <div class="section-text">
+            <p>
+              オーストラリア産を中心に、お客様に自信を持って提供できる
+              新鮮な厳選素材のみを使用しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="section-inner">
+        <h2 class="section-title">一枚入魂 牛たん 藤のこだわり その2 <span>切り</span></h2>
+        <div class="section-flex">
+          <div class="section-image">
+            <img src="切り.png" alt="牛たんを切る様子">
+          </div>
+          <div class="section-text">
+            <p>
+              機械を一切使わず、職人が全て手作業で行います。牛たんは1本1本、
+              脂の入り方や形、サイズが全て違います。長年の経験から素材に合わせて
+              丁寧に1枚ずつ切り分け、更に絶妙な切れ目を入れて仕上げます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">一枚入魂 牛たん 藤のこだわり その3 <span>味付・熟成</span></h2>
+        <div class="section-flex">
+          <div class="section-image">
+            <img src="味付け.png" alt="牛たんの味付けと熟成">
+          </div>
+          <div class="section-text">
+            <p>
+              牛たん一枚一枚の大きさと厚みに合わせて、牛たん専用に数種の塩を
+              ブレンドしたオリジナル塩と胡椒で丁寧に味付け。その後、低温熟成することで
+              旨味を最大限に引き出します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="section-inner">
+        <h2 class="section-title">一枚入魂 牛たん 藤のこだわり その4 <span>焼き</span></h2>
+        <div class="section-flex">
+          <div class="section-image">
+            <img src="焼き.png" alt="炭火で焼かれる牛たん">
+          </div>
+          <div class="section-text">
+            <p>
+              火力が強い岩手県産のナラの切り炭を使用し、牛たんの厚みを見ながら
+              外はカリッと中はジューシーに焼き上げます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section section-menu">
+      <div class="section-inner section-inner-menu">
+        <h2 class="section-title">
+          新鮮だからこそできる<br>
+          限定牛たんメニュー
+        </h2>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <h3>牛たんたたき</h3>
+            <img src="牛タンたたき.png" alt="牛たんたたき" class="menu-item-img">
+            <p class="menu-item-price">3,900円（税込）</p>
+          </article>
+          <article class="menu-item">
+            <h3>牛たん生ハム クリームチーズ添え</h3>
+            <img src="牛タン生ハムクリームチーズ.png" alt="牛たん生ハムクリームチーズ添え" class="menu-item-img">
+            <p class="menu-item-price">1,980円（税込）</p>
+          </article>
+          <article class="menu-item">
+            <h3>牛たんしゃぶしゃぶ</h3>
+            <img src="牛タンしゃぶしゃぶ.png" alt="牛たんしゃぶしゃぶ" class="menu-item-img">
+            <p class="menu-item-price">1,750円（税込）</p>
+          </article>
+        </div>
+        <div class="menu-cta">
+          <a href="menu.html" class="btn-menu-link">いつものメニュー</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-message" aria-labelledby="message-heading">
+      <div class="section-inner">
+        <h2 class="section-title message-section-title" id="message-heading">お店からのメッセージ</h2>
+        <div class="message-inner">
+          <div class="message-image">
+            <img src="店ロゴ.png" alt="気仙沼牛たん 藤 店ロゴ">
+          </div>
+          <div class="message-content">
+            <p class="message-title">
+              気仙沼に来てくださった方も<br>
+              気仙沼に住んでおられる方も
+            </p>
+            <p class="message-text">
+              伊達の匠の技を是非ご賞味ください。<br>
+              こだわりの牛たんメニュー、その他サイドメニューやドリンクメニューにもこだわっておりますので、是非ご家族やご友人と楽しい時間をお過ごしください。
+            </p>
+            <p class="message-sign">牛たん藤</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="section section-contact">
+      <div class="section-inner">
+        <h2 class="section-title">お問い合わせ</h2>
+        <h3 class="contact-subtitle">住所・営業時間</h3>
+        <p class="center-text contact-address">
+          〒988-0017<br>
+          宮城県気仙沼市南町3-1-23
+        </p>
+        <p class="center-text contact-info">
+          電話番号 <a href="tel:0226485995">0226-48-5995</a><br>
+          夜 17:30 - 22:00<br>
+          定休日 日曜日
+        </p>
+        <div class="contact-map">
+          <iframe
+            src="https://maps.google.com/maps?output=embed&amp;q=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%B0%97%E4%BB%99%E6%B2%BC%E5%B8%82%E5%8D%97%E7%94%BA3-1-23&amp;t=m&amp;hl=ja&amp;z=17"
+            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="気仙沼牛たん 藤の地図">
+          </iframe>
+          <span class="contact-map-cover" aria-hidden="true"></span>
+        </div>
+        <div class="contact-sns">
+          <a href="https://www.instagram.com/gyutan.fuji/" class="sns-btn" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">
+            <span class="sns-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </span>Instagram
+          </a>
+          <a href="https://www.facebook.com/p/%E6%B0%97%E4%BB%99%E6%B2%BC-%E7%89%9B%E3%81%9F%E3%82%93-%E8%97%A4-61567984661448/"
+            class="sns-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <span class="sns-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </span>Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>©2024 GYUTAN FUJI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

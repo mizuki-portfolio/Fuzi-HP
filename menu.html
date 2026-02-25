@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>メニュー｜気仙沼牛たん 藤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- トップバー＋ヘッダーをひとまとめで上に固定 -->
+  <div class="header-fixed">
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <span class="top-bar-item">夜 17:30 - 22:00</span>
+        <span class="top-bar-sep" aria-hidden="true">／</span>
+        <span class="top-bar-item">定休日 日曜日</span>
+        <span class="top-bar-sep" aria-hidden="true">／</span>
+        <a href="tel:0226485995" class="top-bar-tel">0226-48-5995</a>
+      </div>
+    </div>
+    <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <a href="index.html">
+          <img src="牛タン藤.png" alt="気仙沼牛たん 藤 ヘッダー" class="logo">
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header-sns" aria-label="SNS">
+        <a href="https://www.instagram.com/gyutan.fuji/" class="header-sns-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/p/%E6%B0%97%E4%BB%99%E6%B2%BC-%E7%89%9B%E3%81%9F%E3%82%93-%E8%97%A4-61567984661448/" class="header-sns-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="メニューを開く">
+        ☰
+      </button>
+    </div>
+    </header>
+  </div>
+
+  <main class="menu-page">
+    <section class="section menu-hero">
+      <div class="section-inner">
+        <h1 class="menu-page-title">メニュー</h1>
+        <p class="menu-page-lead">お食事</p>
+      </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section class="section section-light">
+      <div class="section-inner section-inner-narrow">
+        <p class="menu-info">お通し代としてお一人様550円（税込）をいただいております。</p>
+        <p class="menu-info">ディナー時のみ大人の方はワンドリンクオーダー制</p>
+      </div>
+    </section>
+
+    <!-- 牛たん藤コースメニュー -->
+    <section class="section section-alt">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">牛たん藤コースメニュー</h2>
+
+        <div class="menu-block">
+          <h3 class="menu-subtitle">〇藤おすすめコース 完全予約制／二人前から</h3>
+          <ul class="menu-detail">
+            <li>本日のお通し</li>
+            <li>牛たん生ハムクリームチーズ添え</li>
+            <li>牛テール焼き</li>
+            <li>豚シャブみぞれ鍋</li>
+            <li>牛たんつくね</li>
+            <li>極上牛たん焼き</li>
+            <li>締めのうどん</li>
+            <li>大福アイス</li>
+          </ul>
+          <p class="menu-price-block">一人前 6,600円（税込）<br>※テーブルチャージ込みの金額となります。</p>
+        </div>
+
+        <div class="menu-block">
+          <h3 class="menu-subtitle">〇牛たんフルコース 完全予約制／二人前から</h3>
+          <ul class="menu-detail">
+            <li>本日のお通し</li>
+            <li>藤の野菜サラダ</li>
+            <li>牛たん生ハムクリームチーズ添え</li>
+            <li>牛テール焼き</li>
+            <li>牛タンつくね</li>
+            <li>極上牛たんのたたき</li>
+            <li>極上牛たん焼き</li>
+            <li>麦とろご飯（ハーフ）</li>
+            <li>テールスープ</li>
+            <li>大福アイス</li>
+          </ul>
+          <p class="menu-price-block">一人前 8,800円（税込）<br>※テーブルチャージ込みの金額となります。</p>
+        </div>
+
+        <div class="menu-block">
+          <h3 class="menu-subtitle">〇焼き物コース 完全予約制／三人前から</h3>
+          <ul class="menu-detail">
+            <li>本日のお通し</li>
+            <li>牛たん辛み和え</li>
+            <li>牛ハラミ焼き</li>
+            <li>牛タン塩つくね</li>
+            <li>極上牛たん焼き</li>
+            <li>麦とろご飯（ハーフ）</li>
+            <li>テールスープ</li>
+            <li>大福アイス</li>
+          </ul>
+          <p class="menu-price-block">一人前 7,700円（税込）<br>※テーブルチャージ込みの金額となります。</p>
+        </div>
+
+        <div class="menu-block">
+          <h3 class="menu-subtitle">〇みぞれ鍋コース 完全予約制／三人前から</h3>
+          <ul class="menu-detail">
+            <li>本日のお通し</li>
+            <li>牛たん辛み和え</li>
+            <li>牛タン塩つくね</li>
+            <li>ミニ藤サラダ</li>
+            <li>牛ハラミ焼き</li>
+            <li>豚シャブみぞれ鍋</li>
+            <li>極上牛たん焼き</li>
+            <li>締めのうどん</li>
+            <li>大福アイス</li>
+          </ul>
+          <p class="menu-price-block">一人前 8,800円（税込）<br>※テーブルチャージ込みの金額となります。</p>
+          <p class="menu-note">平日（火・水・木）10％ＯＦＦ！<br>※日本酒、瓶ビール、梅酒除く</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 極上牛たん焼き -->
+    <section class="section section-light">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">・極上牛たん焼き</h2>
+        <div class="menu-section-image">
+          <img src="極上牛たん焼き.png" alt="極上牛たん焼き">
+        </div>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">4枚</span><span class="menu-price">1,600円（税込1,760円）</span></div>
+          <div class="menu-row"><span class="menu-name">6枚</span><span class="menu-price">2,400円（税込2,640円）</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 熟成みそ牛たん焼き -->
+    <section class="section section-alt">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">・熟成みそ牛たん焼き（数量限定）</h2>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">6枚</span><span class="menu-price">2,273円（税込2,500円）</span></div>
+          <div class="menu-row"><span class="menu-name">8枚</span><span class="menu-price">3,200円（税込3,520円）</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 数量限定 -->
+    <section class="section section-light">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">・牛たんユッケ（数量限定）</h2>
+        <p class="menu-note">※希少部位により<br>提供できない場合がございます</p>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">牛たんユッケ</span><span class="menu-price">2,500円（税込2,750円）</span>
+          </div>
+        </div>
+        <h2 class="menu-category-title">・牛たんの刺身（数量限定）</h2>
+        <p class="menu-note">※希少部位により<br>提供できない場合がございます</p>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">牛たんの刺身</span><span class="menu-price">2,500円（税込2,750円）</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 藤オリジナルアラカルトメニュー -->
+    <section class="section section-alt">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">・藤オリジナルアラカルトメニュー</h2>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">極上牛たんのたたき</span><span class="menu-price">3,545円（税込3,900円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">極上牛たんのたたき（ハーフサイズ）</span><span
+              class="menu-price">1,773円（税込1,950円）</span></div>
+          <div class="menu-row"><span class="menu-name">牛たん生ハムクリームチーズ添え</span><span
+              class="menu-price">1,800円（税込1,980円）</span></div>
+          <div class="menu-row"><span class="menu-name">牛ハラミ（4枚）</span><span class="menu-price">1,364円（税込1,500円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">牛たん塩つくね（2本）</span><span class="menu-price">545円（税込600円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">牛たん辛み和え</span><span class="menu-price">350円（税込385円）</span></div>
+          <div class="menu-row"><span class="menu-name">牛テール焼き</span><span class="menu-price">1,454円（税込1,600円）</span>
+          </div>
+          <div class="menu-section-image">
+            <img src="牛たんしゃぶしゃぶ.png" alt="牛たんしゃぶしゃぶ">
+          </div>
+          <div class="menu-row"><span class="menu-name">牛たんしゃぶしゃぶ1人前</span><span
+              class="menu-price">1,590円（税込1,750円）</span></div>
+          <div class="menu-row menu-row-sub"><span class="menu-name">追加 お肉二人前</span><span
+              class="menu-price">2,728円（税込3,000円）</span></div>
+          <div class="menu-row menu-row-sub"><span class="menu-name">追加 お野菜</span><span
+              class="menu-price">364円（税込400円）</span></div>
+        </div>
+        <p class="menu-note">※牛たんしゃぶしゃぶ、ジンギスたんは<br>2人前からのご注文をお願い致します。</p>
+      </div>
+    </section>
+
+    <!-- その他アラカルト -->
+    <section class="section section-light">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">・その他アラカルト</h2>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">定義山の油揚げ</span><span class="menu-price">600円（税込660円）</span></div>
+          <div class="menu-row"><span class="menu-name">干しほたるイカの炙り</span><span class="menu-price">600円（税込660円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">冷やしトマト</span><span class="menu-price">350円（税込385円）</span></div>
+          <div class="menu-row"><span class="menu-name">枝豆</span><span class="menu-price">454円（税込500円）</span></div>
+          <div class="menu-row"><span class="menu-name">チャンジャ</span><span class="menu-price">600円（税込660円）</span></div>
+          <div class="menu-row"><span class="menu-name">たこわさ</span><span class="menu-price">600円（税込660円）</span></div>
+          <div class="menu-row"><span class="menu-name">わさび</span><span class="menu-price">100円（税込110円）</span></div>
+          <div class="menu-row"><span class="menu-name">牛たんそぼろ豆腐</span><span class="menu-price">500円（税込550円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">藤の野菜サラダ</span><span class="menu-price">1,000円（税込1,100円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">藤の野菜サラダハーフ</span><span class="menu-price">600円（税込660円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">お漬物</span><span class="menu-price">300円（税込330円）</span></div>
+          <div class="menu-row"><span class="menu-name">南蛮味噌</span><span class="menu-price">300円（税込330円）</span></div>
+          <div class="menu-row"><span class="menu-name">もろきゅう</span><span class="menu-price">500円（税込550円）</span></div>
+          <div class="menu-section-image">
+            <img src="テールスープ仕立てせり.png" alt="テールスープ仕立てせり鍋">
+          </div>
+          <div class="menu-row"><span class="menu-name">テールスープ仕立てせり鍋 2人前～</span><span
+              class="menu-price">3,500円（税込3,850円）</span></div>
+          <div class="menu-row"><span class="menu-name">テールスープ仕立て豚シャブみぞれ鍋 2人前～<br><span
+                class="menu-note-inline">※冬季限定11月～せりの入荷があるまで</span></span><span
+              class="menu-price">3,000円（税込3,300円）</span></div>
+          <div class="menu-row"><span class="menu-name">締めのおじや</span><span class="menu-price">300円（税込330円）</span></div>
+          <div class="menu-row"><span class="menu-name">締めのうどん</span><span class="menu-price">300円（税込330円）</span></div>
+          <div class="menu-row"><span class="menu-name">追加のせり</span><span class="menu-price">600円（税込660円）</span></div>
+          <div class="menu-row"><span class="menu-name">追加の出汁</span><span class="menu-price">400円（税込440円）</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ご飯・スープ・デザート -->
+    <section class="section section-alt">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">・ご飯</h2>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">麦飯</span><span class="menu-price">319円（税込350円）</span></div>
+          <div class="menu-row"><span class="menu-name">とろろ</span><span class="menu-price">319円（税込350円）</span></div>
+          <div class="menu-row"><span class="menu-name">麦とろご飯（たまご入り）※数量限定</span><span
+              class="menu-price">700円（税込770円）</span></div>
+        </div>
+        <h2 class="menu-category-title">・スープ</h2>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">テールスープ</span><span class="menu-price">400円（税込440円）</span></div>
+        </div>
+        <h2 class="menu-category-title">・デザート</h2>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">二色大福アイス</span><span class="menu-price">363円（税込400円）</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ドリンクメニュー -->
+    <section class="section section-light">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="menu-category-title">ドリンクメニュー</h2>
+        <h3 class="menu-subtitle">・ビール</h3>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">熟選（中ジョッキ）</span><span class="menu-price">700円（税込770円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">アサヒマルエフ（中瓶）</span><span class="menu-price">727円（税込800円）</span>
+          </div>
+          <div class="menu-row"><span class="menu-name">サッポロ赤星（中瓶）</span><span class="menu-price">727円（税込800円）</span>
+          </div>
+        </div>
+        <h3 class="menu-subtitle">・超強炭酸サワー</h3>
+        <div class="menu-rows menu-rows-single-price">
+          <div class="menu-row menu-row-name-only"><span class="menu-name">よだれレモンサワー</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">よだれ梅サワー</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">濃いめレモンサワー（樽ハイ）</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">梅</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">柚子</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">巨峰</span></div>
+          <p class="menu-price-single">各545円（税込600円）</p>
+        </div>
+        <h3 class="menu-subtitle">・チューハイ</h3>
+        <div class="menu-rows menu-rows-single-price">
+          <div class="menu-row menu-row-name-only"><span class="menu-name">ウーロンハイ</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">緑茶ハイ</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">ジャスミンハイ</span></div>
+          <p class="menu-price-single">各545円（税込600円）</p>
+        </div>
+        <h3 class="menu-subtitle">・ワイン</h3>
+        <p class="menu-price-inline">グラスワイン（赤、白）各700円（税込770円）</p>
+        <h3 class="menu-subtitle">・焼酎（ロック、水割り、炭酸、お湯割り）<br>※炭酸は＋50円</h3>
+        <div class="menu-rows menu-rows-single-price">
+          <div class="menu-row menu-row-name-only"><span class="menu-name">麦焼酎 二階堂 グラス</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">芋焼酎 赤霧島 グラス</span></div>
+          <p class="menu-price-single">各600円（税込660円）</p>
+        </div>
+        <h3 class="menu-subtitle">・超強炭酸ハイボール</h3>
+        <div class="menu-rows menu-rows-single-price">
+          <div class="menu-row menu-row-name-only"><span class="menu-name">リッチハイボール</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">コークハイ</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">ジンジャーハイボール</span></div>
+          <p class="menu-price-single">各600円（税込660円）</p>
+        </div>
+        <h3 class="menu-subtitle">・梅酒（ロック、水割り、炭酸、お湯割り）<br>※炭酸は＋50円</h3>
+        <div class="menu-rows">
+          <div class="menu-row"><span class="menu-name">山崎蒸溜所貯蔵梅酒ブレンド</span><span class="menu-price">700円（税込770円）</span>
+          </div>
+        </div>
+        <h3 class="menu-subtitle">・ノンアルコール</h3>
+        <div class="menu-rows menu-rows-single-price">
+          <div class="menu-row menu-row-name-only"><span class="menu-name">ドライゼロ</span></div>
+          <div class="menu-product-group">
+            <div class="menu-row menu-row-name-only menu-row-category"><span class="menu-name">アサヒスタイルバランス</span></div>
+            <div class="menu-row menu-row-name-only menu-row-flavor"><span class="menu-name">レモン</span></div>
+            <div class="menu-row menu-row-name-only menu-row-flavor"><span class="menu-name">ハイボール</span></div>
+            <div class="menu-row menu-row-name-only menu-row-flavor"><span class="menu-name">カシスオレンジ</span></div>
+            <div class="menu-row menu-row-name-only menu-row-flavor"><span class="menu-name">シャルドネスパークリング</span></div>
+          </div>
+          <p class="menu-price-single">各500円（税込550円）</p>
+        </div>
+        <h3 class="menu-subtitle">・ソフトドリンク</h3>
+        <div class="menu-rows menu-rows-single-price">
+          <div class="menu-row menu-row-name-only"><span class="menu-name">烏龍茶</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">緑茶</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">コーラ</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">ジンジャーエール</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">オレンジジュース</span></div>
+          <div class="menu-row menu-row-name-only"><span class="menu-name">ジャスミン茶</span></div>
+          <p class="menu-price-single">各454円（税込500円）</p>
+        </div>
+        <p class="menu-note">※その他日本酒も豊富に取り揃えております。</p>
+      </div>
+    </section>
+
+    <!-- 価格見直しのお知らせ -->
+    <section class="section section-alt">
+      <div class="section-inner section-inner-narrow">
+        <p class="menu-info">
+          牛たん藤では、3ヶ月に一度、牛たんの価格見直しを行っております。原材料の高騰が続く中でも、品質を守りつつ、できる限りの最低価格でのご提供に努めております。今後とも変わらぬご愛顧をよろしくお願いいたします。</p>
+      </div>
+    </section>
+
+    <section class="section section-menu-cta">
+      <div class="section-inner">
+        <a href="index.html" class="btn-menu-link">トップページへ戻る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>©2024 GYUTAN FUJI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
