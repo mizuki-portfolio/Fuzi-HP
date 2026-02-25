@@ -1508,19 +1508,31 @@ textarea {
   }
 
   .menu-row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.25rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
     padding: 0.5rem 0.55rem;
     margin-bottom: 0.25rem;
-    line-height: 1.55;
+    line-height: 1.4;
+    font-size: 0.9375rem;
+  }
+
+  .menu-row .menu-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .menu-row .menu-price {
-    font-size: 1rem;
+    flex-shrink: 0;
+    font-size: 0.9375rem;
     min-width: 0;
     text-align: right;
-    align-self: flex-end;
+    white-space: nowrap;
+    margin-top: 0;
   }
 
   .menu-price-block {
@@ -1548,5 +1560,22 @@ textarea {
   .message-text {
     font-size: 0.94rem;
     line-height: 2.2;
+  }
+}
+
+/* 超小型スマホ（iPhone 13 Pro 390px など）：メニュー行を確実に一行に収める */
+@media (max-width: 390px) {
+  .menu-row {
+    font-size: 0.875rem;
+    padding: 0.45rem 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .menu-row .menu-name {
+    font-size: 0.875rem;
+  }
+
+  .menu-row .menu-price {
+    font-size: 0.875rem;
   }
 }
