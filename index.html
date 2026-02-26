@@ -39,6 +39,7 @@
           <ul>
             <li><a href="#home">ホーム</a></li>
             <li><a href="menu.html">メニュー</a></li>
+            <li><a href="access.html">店舗案内</a></li>
             <li><a href="#contact">お問い合わせ</a></li>
           </ul>
         </nav>
@@ -218,6 +219,23 @@
       </div>
     </section>
 
+    <!-- おしらせ -->
+    <section id="news" class="section section-news" aria-labelledby="news-heading">
+      <div class="section-inner">
+        <h2 class="section-title news-section-title" id="news-heading">おしらせ</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <time class="news-date" datetime="2025-02-24">2025.02.24</time>
+            <span class="news-text">ラストオーダーは21:30です。ご来店の際はお気をつけください。</span>
+          </li>
+          <li class="news-item">
+            <time class="news-date" datetime="2025-02-01">2025.02.01</time>
+            <span class="news-text">2月も通常営業です。ご予約・お問い合わせはお電話にて承ります。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- お問い合わせ -->
     <section id="contact" class="section section-contact">
       <div class="section-inner">
@@ -228,9 +246,16 @@
         </p>
         <p class="center-text contact-info">
           電話番号 <a href="tel:0226485995">0226-48-5995</a><br>
-          夜 17:30 - 22:00<br>
+          夜 17:30 - 22:00　ラストオーダー 21:30<br>
           定休日 日曜日
         </p>
+        <p class="center-text contact-extra">
+          席数 〇席<br>
+          駐車場 近隣にコインパーキングあり
+        </p>
+        <div class="closed-calendar-wrap" aria-label="定休日">
+          <div id="closed-calendar" class="closed-calendar"></div>
+        </div>
         <div class="contact-map">
           <iframe
             src="https://maps.google.com/maps?output=embed&amp;q=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%B0%97%E4%BB%99%E6%B2%BC%E5%B8%82%E5%8D%97%E7%94%BA3-1-23&amp;t=m&amp;hl=ja&amp;z=17"
